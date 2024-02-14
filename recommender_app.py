@@ -29,6 +29,6 @@ if track:
     for i in get_recommendations(track):
         st.subheader(i['name'])
         st.write(' by ' + i['artists'][0]['name'])
-        st.link_button("Link to song on Spotify", i['external_urls']['spotify'])
+        st.link_button("Listen on Spotify", i['external_urls']['spotify'])
         st.image(i['album']['images'][0]['url'], width = 400)
         st.divider()
