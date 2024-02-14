@@ -30,5 +30,5 @@ if track:
         st.subheader(i['name'])
         st.write(' by ' + i['artists'][0]['name'])
         st.link_button("Link to song on Spotify", i['external_urls']['spotify'])
-        st.image(i['album']['images'][0]['url'], width = 400)
+        st.image(i['album']['images'][0]['url'], width = 350)
         st.divider()
